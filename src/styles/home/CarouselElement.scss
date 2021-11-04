@@ -1,3 +1,7 @@
+.carousel-root {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .Carousel-Container {
   .Carousel-Element {
     picture {
@@ -13,6 +17,11 @@
       color: $color-white;
       text-align: initial;
       padding: 0px 7%;
+      max-width: 570px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       h2 {
         font-size: 3rem;
       }

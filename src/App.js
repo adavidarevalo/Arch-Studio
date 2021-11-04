@@ -4,6 +4,7 @@ import {
   Route
 } from "react-router-dom";
 import Home from './views/Home'
+import AboutUs from './views/AboutUs'
 import Layout from './components/Layout/Layout'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <Router>
       <Layout>
         <Route exact path='/' component={Home}/>
+        <Route exact path='/AboutUs' component={AboutUs}/>
       </Layout>
     </Router>
   );
