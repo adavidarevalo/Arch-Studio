@@ -1,0 +1,38 @@
+.Carousel-Container {
+  .Carousel-Element {
+    picture {
+      position: relative;
+      img {
+        filter: brightness(0.5);
+      }
+    }
+    div {
+      position: absolute;
+      z-index: 100;
+      top: 0px;
+      color: $color-white;
+      text-align: initial;
+      padding: 0px 7%;
+      h2 {
+        font-size: 3rem;
+      }
+      p {
+        width: 80%;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 25px;
+      }
+      a {
+        color: $color-white;
+        background: $color-black;
+        font-size: 1.2rem;
+        padding: 10px 15px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        max-width: 210px;
+        justify-content: space-between;
+      }
+    }
+  }
+}
