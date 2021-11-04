@@ -1,0 +1,45 @@
+footer{
+    background: $first-color;
+    section{
+        .Footer-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .Logo-Container{
+            background: $color-black;
+            width: 110px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: 0 auto;
+            top: -50px;
+        }
+        nav{
+            a{
+                display: block;
+                margin-block: 10px;
+                text-align: center;
+                font-size: 1.1rem;
+                color: $color-black;
+                font-weight: 600;
+            }
+        }
+        .Footer-banner{
+            background: $color-black;
+            color: $color-white;
+            h2{
+                padding: 20px 0px;
+                font-size: 1.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
