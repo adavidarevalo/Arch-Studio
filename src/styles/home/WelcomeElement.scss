@@ -1,9 +1,17 @@
 .Welcome-Container {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 30px auto 50px;
+  position: relative;
   article {
     .Mark-Wather {
       display: none;
+      margin: 0px;
+      position: absolute;
+      color: #60636d2b;
+      font-size: 12rem;
+    left: -70px;
+    top: -56px;
+    letter-spacing: 15px;
     }
     img {
       display: none;
@@ -18,6 +26,31 @@
         color: $color-gray;
         font-size: 1rem;
         line-height: 24px;
+      }
+    }
+  }
+  @media (min-width: 800px){
+    article{
+      display: flex;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+      max-width: 1000px;
+      img{
+        display: block;
+      }
+      .Mark-Wather{
+        display: block;
+      }
+      div{
+        margin-right: 20px;
+        h2{
+          font-size: 3rem;
+        }
+        p{
+          font-size: 1.2rem;
+          width: 80%;
+        }
       }
     }
   }

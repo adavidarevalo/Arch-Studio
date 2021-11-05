@@ -4,9 +4,20 @@ header{
     top: 0px;
     width: 100%;
     z-index: 100;
+    animation: fadeInDown 1s both;
     div{
         nav{
             display: none;
+            width: 300px;
+            justify-content: space-between;
+            font-weight: 600;
+            a{
+                color: $color-black;
+                transition: all .5s ease;
+                &:hover{
+                    color: $color-gray;
+                }
+            }
         }
     }
     .Header-Container{
@@ -16,6 +27,7 @@ header{
         margin: 0 auto;
         justify-content: space-between;
         padding: 10px;
+        max-width: 1000px;
         svg{
             font-size: 1.5rem;
         }
@@ -34,9 +46,35 @@ header{
             font-size: 1rem;
             color: $color-black;
             font-weight: 600;
+            transition: all .5s ease;
+            &:hover{
+                color: $color-gray;
+            }
         }
         &.Active{
             transform: translateY(0px);     
         }
     }
+    @media (min-width: 600px){
+        div{
+            .Menu-Button{
+                display: none;
+            }
+            nav{
+                display: flex;
+            }
+        }
+    }
 }
+@keyframes fadeInDown {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 

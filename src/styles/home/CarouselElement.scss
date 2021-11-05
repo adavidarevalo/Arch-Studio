@@ -3,11 +3,14 @@
   margin: 0 auto;
 }
 .Carousel-Container {
+  animation: fadeIn 1s both;
   .Carousel-Element {
+    max-height: 500px;
     picture {
       position: relative;
       img {
         filter: brightness(0.5);
+        box-sizing: border-box;
       }
     }
     div {
@@ -41,7 +44,15 @@
         align-items: center;
         max-width: 210px;
         justify-content: space-between;
+        transition: all .5s ease;
+        &:hover{
+          background: #404040;
+        }
       }
     }
   }
 }
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  } 

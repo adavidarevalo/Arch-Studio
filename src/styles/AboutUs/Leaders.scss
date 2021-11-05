@@ -1,0 +1,30 @@
+.Leaders-Container{
+    width: 80%;
+    margin: 30px auto 50px;
+    max-width: 1000px;
+    article{
+        h2{
+            font-size: 3rem;
+            width: 200px;
+        }
+    }
+    @media (min-width: 650px){
+        width: 90%;
+        article{
+            .Leaders-Elements{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 15px;
+                max-width: 650px;
+                margin: 0px;
+            }
+        }
+        }
+    @media (min-width: 1000px){
+        width: 100%;
+        article{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

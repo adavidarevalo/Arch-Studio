@@ -1,0 +1,25 @@
+.LeaderUsers-Container{
+    margin-bottom: 25px;
+    img{
+        width: 100%;
+    }
+    h3{
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+    }
+    p{
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+    div{
+        font-size: 2.2rem;
+        a{
+            color: $color-black;
+        }
+    }
+    @media (min-width: 1000px){
+        div{
+            display: none;
+        }
+    }
+}

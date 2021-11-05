@@ -1,0 +1,32 @@
+.Heritage-Container{
+    margin: 30px auto;
+    article{
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 80%;
+        img{
+            width: 100%;
+        }
+        div{
+            h2{
+                font-size: 3rem;
+            }
+            p{
+                color: $color-gray;
+                line-height: 25px;
+            }
+        }
+    }
+    @media (min-width: 800px){
+        article{
+            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+            margin-top: 173px;
+            div{
+                width: 90%;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.MainPresentaition-Container{
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto 0px;
+    animation: fadeIn 1s both;
+    picture{
+        img{
+            width: 100%;
+        }
+    }
+    div{
+        width: 80%;
+        position: relative;
+        background: $color-white;
+        top: -100px;
+        padding: 7%;
+        max-width: 580px;
+        margin: 0 auto;
+        .Whater-Mark{
+            display: none;
+            position: absolute;
+            font-size: 11rem;
+            margin: 0px;
+            color: #EEEFF4;
+            left: -170px;
+            font-weight: 500;
+            letter-spacing: 10px;
+            top: -50px;
+        }
+        h3{
+            font-size: 2.1rem;
+            margin-bottom: 0px;
+        }
+        p{
+            font-size: 1rem;
+            line-height: 22px;
+        }
+    }
+    @media (min-width: 800px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        picture > img{
+            width: 300%;
+            max-width: 550px;
+        }
+        div{
+            top: 250px;
+            left: -25px;
+            .Whater-Mark{
+                display: block;
+            }
+            h3{
+                font-size: 4rem;
+                margin: 0px;
+            }
+            p{
+                font-size: 1.3rem;
+                line-height: 35px;
+            }
+        }
+    }
+}

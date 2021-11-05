@@ -3,7 +3,7 @@ import imageHeritage from "../../assets/about/desktop/imageHeritage.jpg"
 
 const Heritage = () =>{
   return(
-    <section>
+    <section className='Heritage-Container'>
       <article>
         <div>
           <h2>Our Heritage</h2>

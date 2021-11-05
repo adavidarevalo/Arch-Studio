@@ -1,0 +1,84 @@
+.FeaturedElement{
+    max-width: 1000px;
+    margin: 40px auto;
+    article{
+        width: 80%;
+        margin: 10px auto;
+        h2{
+            font-size: 3rem;
+            margin: 0px;
+        }
+        .Featured-Header{
+            a{
+                display: none;
+                transition: all .5s ease;
+                &:hover{
+                    background: #404040;
+                  }
+            }
+        }
+        .FeaturedElement-Button{
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg{
+                margin-left: 10px;
+            }
+        }
+        .FeaturedElement-Container{
+            a > .FeaturedElement-Element{
+                position: relative;
+                margin-block: 25px;
+                picture{
+                    img{
+                        width: 100%;
+                        filter: brightness(0.8);
+                    }
+                }
+                div{
+                    position: absolute;
+                    top: 0px;
+                    color: $color-white;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    padding-inline: 10%;
+                    h3{
+                        margin: 0px;
+                        font-size: 1.7rem;
+                    }
+                    p{
+                        margin-top: 5px;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+        @media (min-width: 600px){
+            .Featured-Header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                a{
+                    display: flex;
+                }
+            }
+            .FeaturedElement-Button{
+                display: none;
+            }
+        }
+        @media (min-width: 799px){
+            .FeaturedElement-Container{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 20px;
+            }
+        }
+    }        
+}

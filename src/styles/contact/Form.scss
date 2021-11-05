@@ -1,0 +1,52 @@
+.Form{
+    div{
+        width: 80%;
+        margin: 10px auto 30px;
+        h2{
+            font-size: 3rem;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 75px;
+            input,
+            textarea{
+                width: 90%;
+                margin-block: 15px;
+                font-size: 1.5rem;
+                padding: 10px 15px;
+                border: none;
+                border-bottom: 1px solid gray;
+                outline: none;
+            }
+            textarea{
+                margin-bottom: 0px;
+            }
+            button{
+                align-self: end;
+                align-self: end;
+                background: black;
+                border: none;
+                color: white;
+                font-size: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px 7px;
+            }
+        }
+    }
+    @media (min-width: 700px){
+        div{
+            display: flex;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 30px auto 20px;
+            h2{
+                margin: 0px;
+            }
+        }
+    }
+}

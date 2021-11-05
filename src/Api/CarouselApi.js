@@ -10,8 +10,8 @@ import ParamourDesktop from "../assets/home/desktop/ParamourDesktop.jpg"
 import ParamourTablet from "../assets/home/tablet/ParamourTablet.jpg"
 import ParamourMovil from "../assets/home/mobile/ParamourMovil.jpg"
 
-import SeraphDesktop from "../assets/home/desktop/ParamourDesktop.jpg"
-import SeraphTablet from "../assets/home/tablet/ParamourTablet.jpg"
+import SeraphDesktop from "../assets/home/desktop/SeraphDesktop.jpg"
+import SeraphTablet from "../assets/home/tablet/SeraphTablet.jpg"
 import SeraphMovil from "../assets/home/mobile/SeraphMovil.jpg"
 
 export const CarouselApi = [

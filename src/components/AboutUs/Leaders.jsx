@@ -4,10 +4,10 @@ import LeaderUsers from "./LeaderUsers"
 
 const Leaders = () =>{
   return(
-    <section>
+    <section className='Leaders-Container'>
       <article>
         <h2>The Leaders</h2>
-        <div>
+        <div className='Leaders-Elements'>
           {LeadersApi.map(item => (
             <LeaderUsers data={item}/>
           ))}

@@ -1,0 +1,37 @@
+.DetailsContact-Container{
+    width: 80%;
+    margin: 0 auto;
+    h3{
+        font-size: 3rem;
+        margin: 0px;
+    }
+    div{
+        h4{
+            color: #5c5c5c;
+        }
+        table > tr > td {
+            color: gray;
+            margin-bottom: 10px;
+        }
+        button {
+            margin-top: 20px;
+            background: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            svg{
+                margin-left: 10px;
+            }
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    @media (min-width: 700px){
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        margin: 200px auto 50px;
+    }
+}

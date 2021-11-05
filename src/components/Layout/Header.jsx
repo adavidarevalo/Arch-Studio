@@ -8,9 +8,12 @@ const Header = () => {
     return(
         <header>
             <div className='Header-Container'>
-                <img src={logo} alt='Logo'/>
+                <Link to='/'>
+                    <img src={logo} alt='Logo'/>
+                </Link>
                 <div
                 onClick={()=> setMenuActive(!menuActive)}
+                className='Menu-Button'
                 >
                     {menuActive 
                     ?<AiFillCloseSquare/>
@@ -18,13 +21,13 @@ const Header = () => {
                 }
                 </div>
                 <nav>
-                    <Link to='/'>Portfolio</Link>
+                    <Link to='/Portfolio'>Portfolio</Link>
                     <Link to='AboutUs'>About Us</Link>
                     <Link to='Contact'>Contact</Link>
                 </nav>
             </div>
             <div className={menuActive ? 'Header-menu_movil Active' : 'Header-menu_movil'}>
-                <Link to='/'>Portfolio</Link>
+                <Link to='/Portfolio'>Portfolio</Link>
                 <Link to='AboutUs'>About Us</Link>
                 <Link to='Contact'>Contact</Link>
             </div>

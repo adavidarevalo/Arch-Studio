@@ -1,0 +1,39 @@
+.Portfolio-Container{
+    width: 90%;
+    margin: 30px auto;
+    .Portfolio-Elements{
+        position: relative;
+        margin-block: 30px;
+        picture{
+            img{
+                animation: fadeIn 1s both;
+                width: 100%;
+                filter: brightness(0.7);
+                transition: all .5s ease;
+                &:hover{
+                    filter: inherit;
+                }
+            }
+        }
+        div{
+            position: absolute;
+            top: 0px;
+            color: $color-white;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding-inline: 20px;
+            h3{
+                margin: 0px;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    @media (min-width: 1000px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1000px;
+        grid-gap: 20px;
+    }
+}
